@@ -20,7 +20,7 @@ node(){
 
     stage('Package Build') {
         echo "starting package build"
-        sh "tar -zcvf bundle.tar.gz /dist/test/"
+        sh "tar zcvf bundle.tar.gz dist/test/"
     }
 
     stage('Artifacts Creation') {
